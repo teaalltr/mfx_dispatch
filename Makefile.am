@@ -49,10 +49,10 @@ libintel_gfx_api-x64.a: src/intel_gfx_api-x64.def
 	$(DLLTOOL) --as=as --output-lib $@ --input-def $< --as-flags=--64 -m i386:x86-64
 
 if DLLTOOL_X86
-lib_LTLIBRARIES += libintel_gfx_api-x86.a
+lib_LTLIBRARIES += libintel_gfx_api-x86.la
 endif
 if DLLTOOL_X64
-lib_LTLIBRARIES += libintel_gfx_api-x64.a
+lib_LTLIBRARIES += libintel_gfx_api-x64.la
 endif
 endif
 
